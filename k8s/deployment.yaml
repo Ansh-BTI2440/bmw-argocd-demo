@@ -20,14 +20,14 @@ spec:
       containers:
         - name: python-app
 
-          image: jpalaparthi/bmw-argocd-demo:v1
+          image: jpalaparthi/bmw-argocd-demo:v2
 
           ports:
             - containerPort: 8080
 
           readinessProbe:
             httpGet:
-              path: /health
+              path: /ready
               port: 8080
             initialDelaySeconds: 5
             periodSeconds: 10

@@ -13,5 +13,9 @@ def home():
 def health():
     return {"status": "UP"}
 
+@app.route("/ready")
+def health():
+    return {"status": "Ready"}
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
