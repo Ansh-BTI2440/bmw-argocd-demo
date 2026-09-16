@@ -20,7 +20,7 @@ spec:
       containers:
         - name: python-app
 
-          image: jpalaparthi/bmw-argocd-demo:v2
+          image: jpalaparthi/bmw-argocd-demo:v3
 
           ports:
             - containerPort: 8080

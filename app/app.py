@@ -14,7 +14,7 @@ def health():
     return {"status": "UP"}
 
 @app.route("/ready")
-def health():
+def ready():
     return {"status": "Ready"}
 
 if __name__ == "__main__":
